@@ -1,5 +1,16 @@
-import 'package:demo/demo.dart' as demo;
+import 'package:demo/average.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${demo.calculate()}!');
+  try {
+    String firstArgument = arguments.first;
+    switch (firstArgument) {
+      case 'avg':
+        average(arguments);
+        return;
+      default:
+        throw Exception();
+    }
+  } catch (error) {
+    print('HELP');
+  }
 }

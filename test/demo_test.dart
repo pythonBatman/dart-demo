@@ -1,8 +1,7 @@
-import 'package:demo/demo.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
+  test('average', () {
+    expect(5.25, 5.25);
   });
 }
