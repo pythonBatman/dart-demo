@@ -1,5 +1,7 @@
-import 'package:demo/demo.dart' as demo;
-
 void main(List<String> arguments) {
-  print('Hello world: ${demo.calculate()}!');
+  if (arguments.isNotEmpty) {
+    print('Hello ${arguments.first}');
+  } else {
+    print('Hello nobody');
+  }
 }
