@@ -1,4 +1,5 @@
 import 'package:demo/average.dart';
+import 'package:demo/show_binary_file.dart';
 
 void main(List<String> arguments) {
   try {
@@ -6,6 +7,9 @@ void main(List<String> arguments) {
     switch (firstArgument) {
       case 'avg':
         average(arguments);
+        return;
+      case 'binary':
+        showBinaryFile(arguments);
         return;
       default:
         throw Exception();
